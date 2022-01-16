@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Luxurious+Roman&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.first-site{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 5%;
+    margin-left: 10%;
+    
+}
+.first-site h1{
+    font-size: 60px;
+    color: rgb(15, 15, 15);
+}
+.first-site img{
+    width: 440px;
+    height: 414px;
+    padding-left: 5%;
+}
+.link-button{
+    text-decoration: none;
+    background-color: rgba(238, 18, 121, 0.897);
+    margin-top: 40px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+}
+hr{
+    border: 1px solid #d1d1d1;
+    margin-top: 10%;
+}
+.second-site{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+
+}
+.add-collection{
+    box-shadow: 25px, 25px,  rgb(8, 8, 8);
+}
+.collection{
+    padding: 10px;
+    border-radius: 5px;
+}
+.picture{
+    width: 300px;
+    height: 256px;
+    border-radius: 10px;
+}
+h3{
+    font-size: 150%;
+}
+h4{
+    width: 82px;
+    height: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.document{
+    color: slategray;
+    width: 196px;
+    height: 61px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.fa-star.filled{
+    color: #FB8200;
+    font-size: 12px;
+
+}
+.fa-star-half-alt.filled{
+    color: #FB8200;
+    font-size: 12px;
+}
