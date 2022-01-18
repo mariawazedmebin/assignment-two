@@ -1,3 +1,4 @@
+/* using font */
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Luxurious+Roman&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap');
 body{
     font-family: 'Poppins', sans-serif;
@@ -13,10 +14,13 @@ body{
     font-size: 60px;
     color: rgb(15, 15, 15);
 }
-.first-site img{
+/* ----picture camera will be transform,transition----- */
+.first-site img:hover{
     width: 440px;
     height: 414px;
     padding-left: 5%;
+    transform: scale(1.2);
+    transition: transform 2s ease-in;
 }
 .link-button{
     text-decoration: none;
@@ -31,41 +35,58 @@ hr{
     border: 1px solid #d1d1d1;
     margin-top: 10%;
 }
+h2{
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
 .second-site{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    align-items: center;
     margin-left: 15%;
     margin-right: 15%;
-    
-
 }
 .add-collection{
-    box-shadow: 25px, 25px,  rgb(8, 8, 8);
+    border-radius: 5px;
+    padding: 15px;
+    border-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .collection{
     padding: 10px;
     border-radius: 5px;
 }
-.picture{
+/* -----transform,transiton picture----- */
+.picture:hover {
     width: 300px;
     height: 256px;
     border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 2s ease-in;
 }
+
 h3{
     font-size: 150%;
 }
-h4{
+/* transform,price */
+h4:hover{
     width: 82px;
     height: 36px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, sans-serif;
+    transform: scale(1.2);
+    
 }
 .document{
     color: slategray;
     width: 196px;
     height: 61px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana,  sans-serif;
 }
+/* ----adding star for rating---- */
 .rating{
     display: flex;
     align-items: center;
@@ -79,3 +100,76 @@ h4{
     color: #FB8200;
     font-size: 12px;
 }
+.see-more{
+    text-align: right;
+}
+/* ----creating see more button---- */
+.see-more-button{
+    text-decoration: none;
+    color: rgba(238, 18, 121, 0.897);
+    font-weight: 700;
+    
+}
+/* ---footer ---- */
+.footer-class{
+    background-color: #0A0826;
+    color: mintcream;
+}
+.footer-text{
+    border: 0em;
+    width: 262px;
+    height: 139px;
+    margin: auto;
+}
+.footer-text h5{
+    font-size: 20px;
+    text-align: center;
+}
+.footer-text p{
+    font-size: small;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+.social-media-icon{
+    width: 176px;
+    height: 32px;
+    margin: auto;
+    text-align: center;
+}
+.covid-speach{
+    text-align: center;
+}
+.third-site-img{
+    text-align: center;
+}
+/* media queries */
+/* mobile Devices */
+@media only screen and (max-width:688px){
+    .first-site, .second-site{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .first-site p{
+        width: 321px;
+        height: 65px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .first-site .link-button{
+        width: 194px;
+        height: 44px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .first-site img{
+        height: 257px;
+        width: 257px;
+    }
+    
+}
+/* media queries */
+/* ipad Devices */
+ @media only screen and (min-width:688px)and (max-width:992px){
+     .second-site{
+        grid-template-columns: repeat(2,1fr);
+} 
+ }
